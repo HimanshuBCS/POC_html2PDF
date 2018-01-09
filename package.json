@@ -1,0 +1,19 @@
+{
+  "name": "POC_html2PDF",
+  "version": "1.0.0",
+  "description": "html to pdf",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . poc"
+  },
+  "author": "Himanshu Pandey",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "electron-reload": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^10.1.1"
+  }
+}

@@ -1,0 +1,76 @@
+<html ng-app='myApp'>
+
+<head>
+    <title>Electron html to PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; padding: 4px;">Cricket Player's Detail</h1>
+        <table id="tab_customers" class="table" style="border: groove cyan; background-color: transparent;">
+            <colgroup>
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+            </colgroup>
+            <thead style="border: groove cyan">
+                <tr class='success'>
+                    <th>Name</th>
+                    <th>Playing role</th>
+                    <th>Batting style</th>
+                    <th>Bowling style</th>
+                    <th>Born</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ravichandran Ashwin</td>
+                    <td>Bowling allrounder</td>
+                    <td>Right-hand bat</td>
+                    <td>Right-arm offbreak</td>
+                    <td>17 Sept,1986 (Madras)</td>
+                </tr>
+                <tr>
+                    <td>Shikhar Dhawan</td>
+                    <td>Opening batsman</td>
+                    <td>Left-hand bat</td>
+                    <td>Right-arm offbreak</td>
+                    <td> 5 Dec,1985 (Delhi)</td>
+                </tr>
+                <tr>
+                    <td>Ravindrasinh Anirudhsinh Jadeja</td>
+                    <td>Allrounder</td>
+                    <td>Left-hand bat</td>
+                    <td>Slow left-arm orthodox</td>
+                    <td>6 Dec, 1988 (Saurashtra)</td>
+                </tr>
+                <tr>
+                    <td>Virat Kohli</td>
+                    <td>Top-order batsman</td>
+                    <td>Right-hand bat</td>
+                    <td>Right-arm medium</td>
+                    <td>5 Nov, 1988 (Delhi)</td>
+                </tr>
+                <tr>
+                    <td>Ashish Nehra</td>
+                    <td>Bowler</td>
+                    <td>Right-hand bat</td>
+                    <td>Left-arm medium-fast</td>
+                    <td>29 Apr, 1979 (Delhi)</td>
+                </tr>
+            </tbody>
+    </table>
+    <label id="pdf-path"></label>
+    <button id="print-pdf" class="btn btn-primary btn-block">Click download to PDF</button>
+    </div>
+    <script>
+        require('./renderer.js');
+    </script>
+</body>
+
+</html>
